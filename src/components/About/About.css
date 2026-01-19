@@ -1,0 +1,110 @@
+.about {
+  background-color: var(--color-gray-900);
+  padding: var(--spacing-section) 0;
+}
+
+.about__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Content Layout */
+.about__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* Bio Section */
+.about__bio {
+  padding-right: 2rem;
+}
+
+.about__text {
+  color: var(--color-gray-300);
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.about__text:last-child {
+  margin-bottom: 0;
+}
+
+/* Skills Section */
+.about__skills {
+  background-color: var(--color-gray-800);
+  padding: 2.5rem;
+  border-radius: 8px;
+}
+
+.about__skills-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-white);
+  margin-bottom: 2rem;
+}
+
+.about__skills-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+/* Skill Category */
+.skill-category__title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-gray-400);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.skill-category__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-category__item {
+  background-color: var(--color-gray-700);
+  color: var(--color-gray-200);
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.skill-category__item:hover {
+  background-color: var(--color-gray-600);
+  color: var(--color-white);
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .about__content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about__bio {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .about__skills {
+    padding: 1.5rem;
+  }
+
+  .skill-category__item {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.8125rem;
+  }
+}
