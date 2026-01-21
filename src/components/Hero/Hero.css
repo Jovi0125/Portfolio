@@ -23,11 +23,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(
-    ellipse at center,
-    rgba(30, 30, 30, 0.8) 0%,
-    rgba(0, 0, 0, 1) 70%
-  );
+  background: radial-gradient(ellipse at center,
+      rgba(30, 30, 30, 0.8) 0%,
+      rgba(0, 0, 0, 1) 70%);
 }
 
 .hero__content {
@@ -47,12 +45,30 @@
   margin-bottom: 1rem;
 }
 
+/* Name and Profile Wrapper */
+.hero__name-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.hero__profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 2px solid var(--color-gray-600);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
 /* Name */
 .hero__name {
   font-size: clamp(2.5rem, 8vw, 5rem);
   font-weight: 700;
   color: var(--color-white);
-  margin-bottom: 0.5rem;
   line-height: 1.1;
   letter-spacing: -1px;
 }
@@ -105,19 +121,20 @@
 .hero__scroll-line {
   width: 1px;
   height: 40px;
-  background: linear-gradient(
-    to bottom,
-    var(--color-gray-500),
-    transparent
-  );
+  background: linear-gradient(to bottom,
+      var(--color-gray-500),
+      transparent);
   animation: scrollPulse 2s ease-in-out infinite;
 }
 
 @keyframes scrollPulse {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 0.3;
     transform: scaleY(0.8);
   }
+
   50% {
     opacity: 1;
     transform: scaleY(1);

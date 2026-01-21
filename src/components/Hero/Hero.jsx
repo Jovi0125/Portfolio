@@ -1,6 +1,8 @@
 import React from 'react';
 import './Hero.css';
 
+import profileImg from '../../assets/profile.png';
+
 /**
  * Hero Component
  * Full-screen introduction section with name, role, and CTA buttons
@@ -25,10 +27,13 @@ const Hero = () => {
         {/* Greeting */}
         <p className="hero__greeting fade-in">Hello, I'm</p>
 
-        {/* Name */}
-        <h1 className="hero__name fade-in fade-in--delay-1">
-          John Viray
-        </h1>
+        {/* Name and Profile Image */}
+        <div className="hero__name-wrapper fade-in fade-in--delay-1">
+          <img src={profileImg} alt="John Viray" className="hero__profile-img" />
+          <h1 className="hero__name">
+            John Viray
+          </h1>
+        </div>
 
         {/* Role/Title */}
         <h2 className="hero__title fade-in fade-in--delay-2">
@@ -37,19 +42,19 @@ const Hero = () => {
 
         {/* Tagline */}
         <p className="hero__tagline fade-in fade-in--delay-3">
-          I build modern, scalable web applications with clean code 
+          I build modern, scalable web applications with clean code
           and exceptional user experiences.
         </p>
 
         {/* Call-to-Action Buttons */}
         <div className="hero__cta fade-in fade-in--delay-4">
-          <button 
+          <button
             className="btn btn--primary"
             onClick={() => scrollToSection('#projects')}
           >
             View Projects
           </button>
-          <button 
+          <button
             className="btn btn--secondary"
             onClick={() => scrollToSection('#contact')}
           >

@@ -39,8 +39,8 @@ const Experience = () => {
     {
       id: 1,
       type: 'education',
-      title: 'Bachelor of Science in Computer Science',
-      organization: 'State University',
+      title: 'Bachelor of Science in Information Technology',
+      organization: 'Father Saturnino Urios University',
       period: '2014 - 2018',
       description: 'Graduated with honors. Focused on software engineering, algorithms, and web development. Completed capstone project on real-time collaboration tools.',
     },

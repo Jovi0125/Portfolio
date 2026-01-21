@@ -43,12 +43,12 @@ const Navbar = () => {
     <nav className={`navbar ${isScrolled ? 'navbar--scrolled' : ''}`}>
       <div className="navbar__container">
         {/* Logo */}
-        <a 
-          href="#home" 
+        <a
+          href="#home"
           className="navbar__logo"
           onClick={(e) => handleNavClick(e, '#home')}
         >
-          VIRAY
+
         </a>
 
         {/* Desktop Navigation */}
